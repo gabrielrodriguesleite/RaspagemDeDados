@@ -23,8 +23,8 @@ def scrape_novidades(html_content):
     """Seu código deve vir aqui"""
 
     return [
-        lis
-        for lis in Selector(html_content)
+        links
+        for links in Selector(html_content)
         .css("article div a.cs-overlay-link::attr(href)")
         .getall()
     ]
