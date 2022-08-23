@@ -23,7 +23,8 @@ def scrape_novidades(html_content):
     """Seu código deve vir aqui"""
 
     return [
-        lis for lis in Selector(html_content)
+        lis
+        for lis in Selector(html_content)
         .css("article div a.cs-overlay-link::attr(href)")
         .getall()
     ]
@@ -32,6 +33,7 @@ def scrape_novidades(html_content):
 # Requisito 3
 def scrape_next_page_link(html_content):
     """Seu código deve vir aqui"""
+    return Selector(html_content).css("a.next::attr(href)").get()
 
 
 # Requisito 4
