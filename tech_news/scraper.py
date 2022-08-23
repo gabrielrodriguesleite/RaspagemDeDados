@@ -1,5 +1,6 @@
 from time import sleep
 import requests
+from parsel import Selector
 
 HEAD = {"User-agent": "Mozilla", "Accept": "text/html"}
 TIMEOUT = 3.0
@@ -11,7 +12,7 @@ def fetch(url):
 
     sleep(1)
     try:
-        response = requests.get(url, HEAD, TIMEOUT)
+        response = requests.get(url, headers=HEAD, timeout=TIMEOUT)
     except requests.exceptions.Timeout:
         return None
     return None if response.status_code != 200 else response.text
@@ -20,6 +21,12 @@ def fetch(url):
 # Requisito 2
 def scrape_novidades(html_content):
     """Seu código deve vir aqui"""
+
+    return [
+        lis for lis in Selector(html_content)
+        .css("article div a.cs-overlay-link::attr(href)")
+        .getall()
+    ]
 
 
 # Requisito 3
