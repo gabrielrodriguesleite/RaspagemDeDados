@@ -1,6 +1,20 @@
+from time import sleep
+import requests
+
+HEAD = {"User-agent": "Mozilla", "Accept": "text/html"}
+TIMEOUT = 3.0
+
+
 # Requisito 1
 def fetch(url):
     """Seu código deve vir aqui"""
+
+    sleep(1)
+    try:
+        response = requests.get(url, HEAD, TIMEOUT)
+    except requests.exceptions.Timeout:
+        return None
+    return None if response.status_code != 200 else response.text
 
 
 # Requisito 2
