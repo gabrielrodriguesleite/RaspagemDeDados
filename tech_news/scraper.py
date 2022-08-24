@@ -43,7 +43,6 @@ def scrape_noticia(html_content):
     """Seu código deve vir aqui"""
     s = Selector(html_content)
     return {
-        # "url": s.css("head link::attr(href)").getall()[2],
         "url": s.css("head link[rel=canonical]::attr(href)").get(),
         "title": s.css("h1.entry-title::text").get().strip(),
         "timestamp": s.css("li.meta-date::text").get(),
@@ -72,23 +71,3 @@ def get_tech_news(amount):
 
     create_news(res[:amount])
     return res[:amount]
-
-
-URL = (
-    "https://blog.betrybe.com/noticias/orkut-voltou-o-"
-    "que-se-sabe-ate-agora-sobre-o-retorno/"
-)
-
-# URL = (
-#     "https://blog.betrybe.com/carreira/passos-fundamentais"
-#     "-para-aprender-a-programar/"
-# )
-
-if __name__ == "__main__":
-    # print(scrape_noticia(fetch(URL)))
-    # news = get_tech_news(13)
-    # print(len(news), news)
-    # nov = scrape_novidades(fetch("https://blog.betrybe.com/"))
-    # print(len(nov), nov)
-
-    print(scrape_next_page_link(fetch("https://blog.betrybe.com/")))
