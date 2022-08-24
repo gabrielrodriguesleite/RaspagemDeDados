@@ -2,6 +2,8 @@ from time import sleep
 import requests
 from parsel import Selector
 
+from tech_news.database import create_news
+
 HEAD = {"User-agent": "Mozilla", "Accept": "text/html"}
 TIMEOUT = 3.0
 
@@ -33,7 +35,7 @@ def scrape_novidades(html_content):
 # Requisito 3
 def scrape_next_page_link(html_content):
     """Seu código deve vir aqui"""
-    return Selector(html_content).css("a.next::attr(href)").get()
+    return Selector(html_content).css("a.next.page-numbers::attr(href)").get()
 
 
 # Requisito 4
@@ -60,6 +62,16 @@ def scrape_noticia(html_content):
 # Requisito 5
 def get_tech_news(amount):
     """Seu código deve vir aqui"""
+    URL = "https://blog.betrybe.com/"
+    res = []
+    while amount > len(res):
+        for n in scrape_novidades(fetch(URL)):
+            res.append(scrape_noticia(fetch(n)))
+
+        URL = scrape_next_page_link(fetch(URL))
+
+    create_news(res[:amount])
+    return res[:amount]
 
 
 URL = (
@@ -73,4 +85,10 @@ URL = (
 # )
 
 if __name__ == "__main__":
-    print(scrape_noticia(fetch(URL)))
+    # print(scrape_noticia(fetch(URL)))
+    # news = get_tech_news(13)
+    # print(len(news), news)
+    # nov = scrape_novidades(fetch("https://blog.betrybe.com/"))
+    # print(len(nov), nov)
+
+    print(scrape_next_page_link(fetch("https://blog.betrybe.com/")))
