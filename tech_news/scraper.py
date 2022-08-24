@@ -39,8 +39,38 @@ def scrape_next_page_link(html_content):
 # Requisito 4
 def scrape_noticia(html_content):
     """Seu código deve vir aqui"""
+    s = Selector(html_content)
+    return {
+        # "url": s.css("head link::attr(href)").getall()[2],
+        "url": s.css("head link[rel=canonical]::attr(href)").get(),
+        "title": s.css("h1.entry-title::text").get().strip(),
+        "timestamp": s.css("li.meta-date::text").get(),
+        "writer": s.css("span.author ::text").get(),
+        "comments_count": len(s.css("li.comment").getall()),
+        "summary": "".join(
+            Selector(s.css("div.entry-content p").get())
+            .css("* ::text")
+            .getall()
+        ).strip(),
+        "tags": [tags for tags in s.css("section.post-tags a::text").getall()],
+        "category": s.css("div.meta-category span.label::text").get(),
+    }
 
 
 # Requisito 5
 def get_tech_news(amount):
     """Seu código deve vir aqui"""
+
+
+URL = (
+    "https://blog.betrybe.com/noticias/orkut-voltou-o-"
+    "que-se-sabe-ate-agora-sobre-o-retorno/"
+)
+
+# URL = (
+#     "https://blog.betrybe.com/carreira/passos-fundamentais"
+#     "-para-aprender-a-programar/"
+# )
+
+if __name__ == "__main__":
+    print(scrape_noticia(fetch(URL)))
