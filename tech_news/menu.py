@@ -18,13 +18,8 @@ Selecione uma das opções a seguir:
 
 
 def captura_entrada():
-    e = "0 1 2 3 4".split(" ")
     entrada = input()
-    if entrada not in e:
-        print("Opção inválida", file=stderr)
-        return -1
-
-    return int(entrada)
+    return -1 if entrada not in "0 1 2 3 4".split(" ") else int(entrada)
 
 
 submenu = [
@@ -33,6 +28,7 @@ submenu = [
     lambda: print("Digite a data no formato aaaa-mm-dd:"),
     lambda: print("Digite a tag:"),
     lambda: print("Digite a categoria:"),
+    lambda: print("Opção inválida", file=stderr),
 ]
 
 
