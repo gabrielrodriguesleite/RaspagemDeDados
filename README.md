@@ -24,6 +24,7 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
 
 <img src="Captura de tela em 2022-08-29 22-50-26.png" alt=""  style="float: right" width="50%" >
 <img src="Screenshot 2022-08-29 at 22-52-23 Projeto.png" alt=""  width="49%" >
+<img src="Captura de tela em 2022-08-29 23-25-57.png" alt=""  width="100%" >
 
 
 <!-- Olá, Tryber!
