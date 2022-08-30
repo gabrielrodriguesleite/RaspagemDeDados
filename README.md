@@ -36,15 +36,21 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
 
 Primeiro execute os containers no docker:
 
-`docker-compose up`
+`docker-compose up -d`
 
-Em outro terminal será necessário acoplar ao container tech_news com o comando:
+Será necessário acoplar ao container tech_news com o comando:
 
 `docker attach tech_news`
 
 Em seguida para executar o projeto use o comando:
 
 `tech-news-analyzer`
+
+Siga as instruções na tela para obter os resultados.
+
+Para derrubar os serviços do docker use o comando:
+
+`docker-compose down --remove-orphans`
 
 
 <!-- Olá, Tryber!
