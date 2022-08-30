@@ -1,4 +1,8 @@
-# 🚧 README em construção 🚧
+# Projeto Tech News - Trybe
+
+Trybe / Desenvolvimento Web / Ciência da computação
+
+3° Projeto desenvolvido no 4° módulo de Desenvolvimento Web da Trybe (08/22)
 
 <!-- Olá, Tryber!
 
