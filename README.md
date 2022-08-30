@@ -1,8 +1,8 @@
 # Projeto Tech News - Trybe
 
-Trybe / Desenvolvimento Web / Ciência da computação
+Trybe / Desenvolvimento Web / Ciência da computação.
 
-3° Projeto desenvolvido no 4° módulo de Desenvolvimento Web da Trybe (08/22)
+3° Projeto desenvolvido no 4° módulo de Desenvolvimento Web da Trybe (08/22) | Individual.
 
 ## Objetivo
 
@@ -72,17 +72,10 @@ Arquivos desenvolvidos por mim:
 
 - arquivos de imagem png
 
-<!-- Olá, Tryber!
+## TODO:
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+- Explicação dos módulos do projeto
 
-É essencial que você preencha esse documento por conta própria, ok?
+- Comandos de execução de cada módulo
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+- Testes
