@@ -30,7 +30,9 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
  
 - A organização e a aderência do código à especificação.
 - Testes com 90% de coverage.
-- Técnicas de raspagem e manipulação de arquivos.
+- Técnicas de raspagem de dados extraindo conteúdo HTML.
+- Armazenar os dados obtidos em um banco de dados MongoDB.
+- Utilizar o terminal interativo do Python.
  
 ## Para executar o projeto:
 
