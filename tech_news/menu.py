@@ -1,4 +1,13 @@
-from sys import stderr
+import sys
+from tech_news.analyzer.ratings import top_5_categories, top_5_news
+
+from tech_news.analyzer.search_engine import (
+    search_by_title,
+    search_by_category,
+    search_by_tag,
+    search_by_date,
+)
+from tech_news.scraper import get_tech_news
 
 
 def show_main_menu():
@@ -19,16 +28,45 @@ Selecione uma das opções a seguir:
 
 def captura_entrada():
     entrada = input()
-    return -1 if entrada not in "0 1 2 3 4".split(" ") else int(entrada)
+    return -1 if entrada not in "0 1 2 3 4 5 6 7".split(" ") else int(entrada)
+
+
+# Requisito 13
+def gt_news():
+    print("Digite quantas notícias serão buscadas:")
+    print(get_tech_news(int(input())))
+
+
+def sb_title():
+    print("Digite o título:")
+    search_by_title(input())
+
+
+def sb_date():
+    print("Digite a data no formato aaaa-mm-dd:")
+    search_by_date(input())
+
+
+def sb_tag():
+    print("Digite a tag:")
+    search_by_tag(input())
+
+
+def sb_category():
+    print("Digite a categoria:")
+    search_by_category(input())
 
 
 submenu = [
-    lambda: print("Digite quantas notícias serão buscadas:"),
-    lambda: print("Digite o título:"),
-    lambda: print("Digite a data no formato aaaa-mm-dd:"),
-    lambda: print("Digite a tag:"),
-    lambda: print("Digite a categoria:"),
-    lambda: print("Opção inválida", file=stderr),
+    gt_news,
+    sb_title,
+    sb_date,
+    sb_tag,
+    sb_category,
+    lambda: print(top_5_news()),
+    lambda: print(top_5_categories()),
+    lambda: print("Encerrando script"),
+    lambda: print("Opção inválida", file=sys.stderr),
 ]
 
 
