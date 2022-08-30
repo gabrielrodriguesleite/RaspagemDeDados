@@ -6,7 +6,7 @@ Trybe / Desenvolvimento Web / Ciência da computação
 
 ## Objetivo
 
-Validar o conhecimento sobre raspagem de dados utilizando como fonte o site https://blog.betrybe.com/
+Validar o conhecimento sobre raspagem de dados utilizando como fonte o site https://blog.betrybe.com/ e salvar os dados em um banco de dados MongoDB.
 
 ## Tecnologias Utilizadas
 
