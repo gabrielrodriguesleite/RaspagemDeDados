@@ -8,7 +8,7 @@ Trybe / Desenvolvimento Web / Ciência da computação
 
 Validar o conhecimento sobre raspagem de dados utilizando como fonte o site https://blog.betrybe.com/
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
   - Python3
   - Pytest
@@ -20,6 +20,10 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
   - Git
   - Github
 
+## Resultados Obtidos
+
+<img src="Captura de tela em 2022-08-29 22-50-26.png" alt=""  style="float: right" width="50%" >
+<img src="Screenshot 2022-08-29 at 22-52-23 Projeto.png" alt=""  width="49%" >
 
 
 <!-- Olá, Tryber!
