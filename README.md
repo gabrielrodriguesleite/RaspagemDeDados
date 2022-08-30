@@ -52,6 +52,25 @@ Para derrubar os serviços do docker use o comando:
 
 `docker-compose down --remove-orphans`
 
+## Fontes:
+
+Todos os arquivos que não estiverem listados aqui são de autoria de trybe-teck-ops
+
+Arquivos desenvolvidos por mim:
+
+- README.md
+
+- tech_news/database.py
+
+- tech_news/menu.py
+
+- tech_news/scraper.py
+
+- tech_news/analyzer/ratings.py
+
+- tech_news/analyzer/search_engine.py
+
+- arquivos de imagem png
 
 <!-- Olá, Tryber!
 
