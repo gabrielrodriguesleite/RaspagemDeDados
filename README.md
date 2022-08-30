@@ -8,6 +8,20 @@ Trybe / Desenvolvimento Web / Ciência da computação
 
 Validar o conhecimento sobre raspagem de dados utilizando como fonte o site https://blog.betrybe.com/
 
+## Tecnologias utilizadas
+
+  - Python3
+  - Pytest
+  - Black
+  - Flake8
+  - Docker
+  - Docker-compose
+  - Linux
+  - Git
+  - Github
+
+
+
 <!-- Olá, Tryber!
 
 Esse é apenas um arquivo inicial para o README do seu projeto.
