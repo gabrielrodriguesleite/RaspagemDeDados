@@ -32,7 +32,8 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
 - Testes com 90% de coverage.
 - Técnicas de raspagem de dados extraindo conteúdo HTML.
 - Armazenar os dados obtidos em um banco de dados MongoDB.
-- Utilizar o terminal interativo do Python.
+- Utilizar o terminal interativo do Python3.
+- Código limpo e verificado por linter. (Flake8)
  
 ## Para executar o projeto:
 
