@@ -4,6 +4,10 @@ Trybe / Desenvolvimento Web / Ciência da computação
 
 3° Projeto desenvolvido no 4° módulo de Desenvolvimento Web da Trybe (08/22)
 
+## Objetivo
+
+Validar o conhecimento sobre raspagem de dados utilizando como fonte o site https://blog.betrybe.com/
+
 <!-- Olá, Tryber!
 
 Esse é apenas um arquivo inicial para o README do seu projeto.
