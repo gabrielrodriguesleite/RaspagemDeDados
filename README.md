@@ -29,7 +29,7 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
 ## Habilidades Desenvolvidas
  
 - A organização e a aderência do código à especificação.
-- Testes com 90% de coverage.
+- Testes com 90% de coverage(no avaliador da Trybe).
 - Técnicas de raspagem de dados extraindo conteúdo HTML.
 - Armazenar os dados obtidos em um banco de dados MongoDB.
 - Utilizar o terminal interativo do Python3.
