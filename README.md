@@ -26,6 +26,13 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
 <img src="Screenshot 2022-08-29 at 22-52-23 Projeto.png" alt=""  width="49%" >
 <img src="Captura de tela em 2022-08-29 23-25-57.png" alt=""  width="100%" >
 
+## Habilidades Desenvolvidas
+ 
+- A organização e a aderência do código à especificação.
+- Testes com 90% de coverage.
+- Técnicas de raspagem e manipulação de arquivos.
+ 
+
 
 <!-- Olá, Tryber!
 
