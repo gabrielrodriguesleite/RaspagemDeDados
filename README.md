@@ -32,6 +32,19 @@ Validar o conhecimento sobre raspagem de dados utilizando como fonte o site http
 - Testes com 90% de coverage.
 - Técnicas de raspagem e manipulação de arquivos.
  
+## Para executar o projeto:
+
+Primeiro execute os containers no docker:
+
+`docker-compose up`
+
+Em outro terminal será necessário acoplar ao container tech_news com o comando:
+
+`docker attach tech_news`
+
+Em seguida para executar o projeto use o comando:
+
+`tech-news-analyzer`
 
 
 <!-- Olá, Tryber!
